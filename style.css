@@ -1,0 +1,179 @@
+body {
+   background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image.png);
+   background-size: cover ;
+    font-family: 'Segoe UI', Tahoma ;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+
+
+.container {
+    padding: 30px;
+    border-radius: 15px;
+    width: 900px;
+ 
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  
+}
+
+
+
+#city-input {
+  background: rgba(255, 255, 255, 0.25); 
+  color: #fff;                           
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: background 0.2s;
+}
+
+#city-input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 60%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s;
+   
+}
+
+.search-box input:focus {
+    border: 1px solid #0077ff;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    margin-left: 15px;
+    border-radius: 6px ;
+    background: #0077ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: #005dc1;
+}
+
+.main-weather {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-weather h2{
+    color: white ;
+}
+
+.main-weather h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    color: #b0a7a7;
+}
+
+.main-weather p {
+    font-size: 17px;
+    color: #b0a7a7;
+    font-weight: 500 ;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.highlights div {
+    background: #f0f7ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 119, 255, 0.1);
+    transition: transform 0.2s;
+}
+
+.highlights div:hover {
+    transform: translateY(-5px);
+}
+
+.highlights p {
+    font-size: 25px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 700; 
+}
+
+.highlights h3 {
+    font-size: 24px;
+    color: #0077ff;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.forecast-day {
+    background: #e8f4ff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 119, 255, 0.1);
+    transition: transform 0.2s;
+}
+
+.forecast-day:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-day img {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-day p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+    font-weight: 700; 
+}
+
+.hidden {display: none ;}
+
+.imagee {  height: 40px ;
+    width: 40px ; }
+
+ .imagee {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  z-index: 1;
+}
+
+.titlee {  position: fixed;
+ top: -5px; 
+left : 70px; 
+color: white ;
+font-size: 20px ;
+font-weight: 700 ;}
+
+.below { margin: calc(16px + 15vw) auto;}

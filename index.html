@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="imagee" src="image2.png">
+    <p class="titlee">Weather</p>
+    <div class="container">
+        <div class="search-box below">
+            <input type="text" id="city-input" placeholder="Enter city...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+        <div class="main-weather">
+            <h2 id="city-name"></h2>
+            <h1 id="temp"></h1>
+            <p id="feels-like"></p>
+            <p id="condition"></p>
+            <p id="date-time"></p>
+        </div>
+        <div class="highlights hidden">
+            <div><p>Humidity</p><h3 id="humidity"></h3></div>
+            <div><p>Wind Speed</p><h3 id="wind"></h3></div>
+            <div><p>Cloud</p><h3 id="cloud"></h3></div>
+            <div><p>UV Index</p><h3 id="uv"></h3></div>
+            <div><p>Pressure</p><h3 id="pressure"></h3></div>
+            <div><p>Sunrise/Sunset</p><h3 id="sun"></h3></div>
+        </div>
+        <div class="forecast" id="forecast"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
